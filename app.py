@@ -1,10 +1,3 @@
-
-"""
-Created on Fri Apr 10 13:48:41 2020
-
-@author: ARKADIP GHOSH
-"""
-
 import numpy as np
 import cv2
 from flask import Flask, request, jsonify, render_template
