@@ -2,8 +2,6 @@ import numpy as np
 import cv2
 from flask import Flask, request, jsonify, render_template
 import pickle
-#from IPython.display import display
-#from PIL import Image
 from keras.preprocessing.image import load_img, img_to_array
 app = Flask(__name__)
 
