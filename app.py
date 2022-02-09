@@ -36,24 +36,24 @@ def predict():
         if(r==0):
             return render_template('index.html',prediction_text0="Гнев")
         elif(r==1):
-            return render_template('index.html',prediction_text0="Отвращение")
+            return render_template('index.html',prediction_text1="Отвращение")
         elif(r==2):
-            return render_template('index.html',prediction_text0="Страх")
+            return render_template('index.html',prediction_text2="Страх")
         elif(r==3):
-            return render_template('index.html',prediction_text0="Радость ")
+            return render_template('index.html',prediction_text3="Радость ")
         elif(r==4):
-            return render_template('index.html',prediction_text0="Безразличие")
+            return render_template('index.html',prediction_text4="Безразличие")
         elif(r==5):
-            return render_template('index.html',prediction_text0="Печаль")
+            return render_template('index.html',prediction_text5="Печаль")
         else:
-            return render_template('index.html',prediction_text0="Удивление")
+            return render_template('index.html',prediction_text6="Удивление")
     
     
     
         
         
     else:
-        return render_template('index.html',prediction_text0="Безразличие")
+        return render_template('index.html',prediction_text4="Безразличие")
         
         
     
