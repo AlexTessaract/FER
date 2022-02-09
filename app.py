@@ -36,26 +36,26 @@ def predict():
         h=model.predict([x])
         r=np.argmax(h)
         if(r==0):
-            return render_template('index.html',prediction_text0="You seem to be angry !!! Chill and Relax")
+            return render_template('index.html',prediction_text0="Гнев")
         elif(r==1):
-            return render_template('index.html',prediction_text0="You seem to be disgusted !!! Take some rest ")
+            return render_template('index.html',prediction_text0="Отвращение")
         elif(r==2):
-            return render_template('index.html',prediction_text0="You seem to be afraid !!! know god is always with you ")
+            return render_template('index.html',prediction_text0="Страх")
         elif(r==3):
-            return render_template('index.html',prediction_text0="You seem to be happy :) Fine ")
+            return render_template('index.html',prediction_text0="Радость ")
         elif(r==4):
-            return render_template('index.html',prediction_text0="You seem to be neutral  :) nice ")
+            return render_template('index.html',prediction_text0="Безразличие")
         elif(r==5):
-            return render_template('index.html',prediction_text0="You seem to be sad . Get a friend and chat ")
+            return render_template('index.html',prediction_text0="Печаль")
         else:
-            return render_template('index.html',prediction_text0="You seem to be surprised . Take a long breath ")
+            return render_template('index.html',prediction_text0="Удивление")
     
     
     
         
         
     else:
-        return render_template('index.html',prediction_text0="You seem to be neutral  :) nice")
+        return render_template('index.html',prediction_text0="Безразличие")
         
         
     
