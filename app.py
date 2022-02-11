@@ -52,8 +52,8 @@ def predict():
     
         
         
-    else:
-        return render_template('index.html',prediction_text0="Безразличие")
+    #else:
+        #return render_template('index.html',prediction_text0="Безразличие")
         
         
     
